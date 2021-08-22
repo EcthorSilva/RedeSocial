@@ -48,9 +48,8 @@
         <div class="link">Já tem uma conta? <a href="index.html">Entre Aqui!</a></div>
       </section>
     </div>
-
+    <script src="javascript/confirm-password.js"></script>
     <script src="javascript/pass-show-hide.js"></script>
     <script src="javascript/signup.js"></script>
-    <script src="javascript/confirm-password.js"></script>
   </body>
 </html>
