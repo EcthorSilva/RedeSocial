@@ -16,7 +16,6 @@ body{
   padding: 0 10px;
 }
 
-
 .wrapper{
   background: #fff;
   max-width: 425px;
@@ -27,7 +26,6 @@ body{
 }
 
 /* Inicio da Tela de Login e Registro */
-
 .form{
   padding: 25px 30px;
 }
