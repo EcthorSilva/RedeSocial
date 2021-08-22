@@ -34,18 +34,20 @@
             <input type="password" name="password" placeholder="Nova senha" required id="password">
             <i class="fas fa-eye"></i>
           </div>
-
           <div class="field input">
             <label></label>
             <input type="password" name="password" placeholder="Confirme a senha" required id="confirm_password">
             <i class="fas fa-eye"></i>
           </div>
-
+          <div class="field image">
+            <label>Select Image</label>
+            <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
+          </div>
           <div class="field button">
             <input type="submit" name="submit" value="Cadastre-se">
           </div>
         </form>
-        <div class="link">Já tem uma conta? <a href="index.html">Entre Aqui!</a></div>
+        <div class="link">Já tem uma conta? <a href="index.php">Entre Aqui!</a></div>
       </section>
     </div>
     <script src="javascript/confirm-password.js"></script>

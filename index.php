@@ -27,10 +27,11 @@
                     <input type="submit" name="submit" value="Entrar">
                     </div>
                 </form>
-                <div class="link">Ainda não tem uma conta? <a href="signup.html">Cadastre-se</a></div>
+                <div class="link">Ainda não tem uma conta? <a href="signup.php">Cadastre-se</a></div>
             </section>
         </div>
 
         <script src="javascript/pass-show-hide.js"></script>
+        <script src="javascript/login.js"></script>
     </body>
 </html>
