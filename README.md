@@ -10,3 +10,4 @@
 - Adicionado um mini perfil na pagina de users.php para testes  
 - Adicionado a função de logout
 - Adicionado um sistema simples para saber se o user esta online ou offline  
+- Adicionado a estrutura e modelagem do Navbar que ficara presente em boa parte das telas da rede social  
