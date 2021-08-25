@@ -1,6 +1,6 @@
 # RedeSocial  
 
-Este é um projeto simples de uma Rede Social criada para o TCC do Grupo 8 do curso de Desenvolvimento de Distemas da Etec Irmã Agostina.  
+Este é um projeto simples de uma Rede Social criada para o TCC do Grupo 8 do curso de Desenvolvimento de Sistemas da Etec Irmã Agostina.  
 ### Updates
 
 - Adicionado a função de logout
