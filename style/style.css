@@ -22,7 +22,6 @@ nav{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   height: 70px;
   background: #fff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -182,17 +181,18 @@ input (field input/label)*/
 }
 
 /* Inicio da pagina user.php */
-.me-wrapper{
+.me-wrapper{ /* Influencia diretamente no tweet box*/
   background: #fff;
   max-width: 60%;
   width: 100%;
   border-radius: 16px;
   box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
               0 32px 64px -48px rgba(0,0,0,0.5);
+  /* Fixindo o me-wrapper na tela*/
+  position:fixed;
+  top: 100px;
+  z-index: 100;
 }
-
-.clear{clear: both;}
-
 .w30{
   text-align: center;
   width: 30%;
@@ -200,14 +200,12 @@ input (field input/label)*/
   padding: 30px;
   border: 10px solid -webkit-repeating-linear-gradient(-45deg, #77A1D3, #79CBCA, #C4E0E5);
 }
-
-.w70{
-  width: 70%;
+.w60{
+  width: 67%; /* Afeta diretamente a tbox */
   float: left;
-  padding: 30px;
+  padding: 15px; /* espaçamento das pubs*/
   border: 4px solid -webkit-repeating-linear-gradient(-45deg, #77A1D3, #79CBCA, #C4E0E5);
 }
-
 h2.title{
   font-weight: normal;
   color:rgb(180, 180, 180);
@@ -215,11 +213,32 @@ h2.title{
   text-transform: uppercase;
   border-bottom: 1px solid rgb(180, 180, 180);
 }
+span.cont-bio{
+  font-size: 16px;
+  padding-top: 10px;
+  font-weight: 400;
+}
+h2.bio{
+  font-weight: normal;
+  color: #77A1D3;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.perfil-bio{
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 10px 1px 3px 1px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.1),
+              0 22px 34px -28px rgba(0,0,0,0.2);
+}
 
 .container-img{
   margin-top: 10px;
 }
-
 /* perfil */
 .container-img img{
   width: 90%;
@@ -320,4 +339,168 @@ h2.title{
   .chat-area form button{
     width: 45px;
   }
+}
+
+/* caixa de publicação */
+.wrapper-tbox{
+  background: #fff;
+  max-width: 10px;
+  width: 100%;
+  padding: 25px 25px 15px 25px;
+  float: left;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: background 0.5s ease-in-out;
+}
+.wrapper-tbox:hover{
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.2),
+              0 32px 64px -48px rgba(0,0,0,0.3);
+}
+.input-box{
+  
+  border-bottom: 1px solid #e6e6e6
+}
+.input-box .twee-area{
+  position: relative;
+  min-height: 90px;
+}
+.twee-area .placeholder{
+  position: absolute;
+  margin-top: -3px;
+  font-size: 22px;
+  color: #98a5b1; /* !!! */
+}
+.twee-area input{
+  outline: none;
+  font-size: 17px;
+  word-wrap: break-word;
+}
+.twee-area .readonly{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.input-box .privacy{
+  color: #77A1D3;
+  margin: 15px 0;
+  padding: 7px 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.2s ease;
+  border-radius: 50px;
+}
+.input-box .privacy:hover, .icons li:hover{
+  background: #e7f5fe;
+}
+.privacy i{
+  font-size: 18px;
+}
+.privacy span{
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 7px;
+}
+.bottom{
+  display: flex;
+  margin-top: 13px;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom .icons{
+  display: inline-flex;
+}
+.icons li{
+  color: #77A1D3;
+  list-style: none;
+  height: 38px;
+  width: 38px;
+  margin: 0 2px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+.bottom .content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .counter{
+  display: none;
+  font-weight: 500;
+  margin-right: 15px;
+  padding-right: 15px;
+  color: #333;
+  border-right: 1px solid #aab8c2;
+}
+.content button{
+  padding: 9px 18px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  background: -webkit-repeating-linear-gradient(-45deg, #77A1D3, #79CBCA, #C4E0E5);
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.5;
+  pointer-events: none;
+  transition: background 0.2s ease;
+}
+.bottom button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+.bottom button:hover{
+  background: #77A1D3; /* 10:40 */
+}
+
+/* Iniciando a parte das publicações na pagina user.php*/
+.pub-wrapper{
+  background: #fff;
+  width: 100%;
+  padding: 15px 15px 5px 15px;
+  float: left;
+  border-radius: 16px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.2),
+              0 22px 34px -28px rgba(0,0,0,0.3);
+}
+
+h2.pub-name{
+  font-weight: normal;
+  color:rgb(95, 95, 95);
+  font-size: 20px;
+}
+.details p{
+  font-size: 15;
+  margin-left: 10px;
+  color: #4CA1AF;
+}
+.pub-wrapper{
+  align-items: center;
+  padding-bottom: 20px;
+}
+.pub-wrapper img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+:is(.pub-wrapper) .details{
+  display: flex;
+  align-items: center;
+}
+h3.cont-pub{
+  font-weight: normal;
+  word-wrap: break-word;
+  font-size: 16px;
+  padding-top: 10px;
+  font-weight: 400;
 }

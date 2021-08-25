@@ -15,4 +15,6 @@
     if(mysqli_num_rows($sql) > 0){
         $row = mysqli_fetch_assoc($sql);
     }
+
+    // Aqui detectamos todos os dados do usuario conectado no momento da sessão
 ?>
