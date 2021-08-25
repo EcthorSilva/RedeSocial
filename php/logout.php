@@ -14,7 +14,7 @@
                 header("location: ../index.php");
             }
         }else{
-            header("location: ../users.php");
+            header("location: ../user.php");
         }
     }else{  
         header("location: ../index.php");

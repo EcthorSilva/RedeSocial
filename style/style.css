@@ -69,6 +69,8 @@ nav .navbar .links li a{
   font-weight: 500;
 }
 
+
+/* Codigo original - Inicio*/
 .wrapper{
   background: #fff;
   max-width: 425px;
@@ -179,48 +181,80 @@ input (field input/label)*/
   text-decoration: underline;
 }
 
-/* Iniciando a tela do usuario para testes */
-.users{
-  padding: 25px 30px;
+/* Inicio da pagina user.php */
+.me-wrapper{
+  background: #fff;
+  max-width: 60%;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+              0 32px 64px -48px rgba(0,0,0,0.5);
 }
-.users header{
-  display: flex;
-  align-items: center;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e6e6e6;
-  justify-content: space-between;
+
+.clear{clear: both;}
+
+.w30{
+  text-align: center;
+  width: 30%;
+  float: left;
+  padding: 30px;
+  border: 10px solid -webkit-repeating-linear-gradient(-45deg, #77A1D3, #79CBCA, #C4E0E5);
 }
-.wrapper img{
-  object-fit: cover;
+
+.w70{
+  width: 70%;
+  float: left;
+  padding: 30px;
+  border: 4px solid -webkit-repeating-linear-gradient(-45deg, #77A1D3, #79CBCA, #C4E0E5);
+}
+
+h2.title{
+  font-weight: normal;
+  color:rgb(180, 180, 180);
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.container-img{
+  margin-top: 10px;
+}
+
+/* perfil */
+.container-img img{
+  width: 90%;
   border-radius: 50%;
 }
-.users header img{
-  height: 50px;
-  width: 50px;
+
+.lista-amigos{
+  margin-top: 10px;
 }
-:is(.users) .content{
-  display: flex;
-  align-items: center;
-}
-:is(.users) .content .details{
-  color: #000;
-  margin-left: 20px;
-}
-:is(.users) .details span{
-  font-size: 18px;
-  font-weight: 500;
-}
-.users header .logout{
-  display: block;
-  background: #333; /* !!! */
+
+.lista-amigos h3{
+  background: -webkit-repeating-linear-gradient(-45deg, #77A1D3, #79CBCA, #C4E0E5);
   color: #fff;
-  outline: none;
-  border: none;
-  padding: 7px 15px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 17px;
+  padding: 8px;
+  border-radius: 13px;
 }
+
+.img-single-amigo{
+  float: left;
+  width: 33.3%;
+  padding-top: 33.3%;
+  position: relative;
+}
+
+.img-single-amigo-wrapper{
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-size: 100% 100%;
+  background: #ccc;
+  border-radius: 13px;
+}
+/* fim da pagina user.php */
 
 /* Inicio do CSS de Responsividade */
 @media screen and (max-width: 450px) {
