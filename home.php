@@ -2,53 +2,12 @@
 <?php include_once "include/navbar.php"?>
 
     <body>
-    <div class="me-wrapper">
-            <!-- Perfil Info -->
-            <section class="perfil-info">
-                <div style="max-width: 1280px;" class="container">
-                    <div class="w30">
-                        <h2 class="title"><?php echo $row['fname']. " " . $row['lname'] ?> </h2>
-                        <div class="container-img">
-                            <img src="php/images/<?php echo $row['img']; ?>" alt="perfil">
-                        </div>
+        <div class="content-center">
 
-                        <div class="perfil-bio">
-                            <h2 class="bio">Bio</h2>
-                            <div class="container-img">
-                            <span class="cont-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                        </div>
-                        </div>
-                            
-                        <div class="lista-amigos">
-                            <h3><i class="fas fa-users"></i> Amigos </h3>
-                            <div class="img-single-amigo">
-                                <div class="img-single-amigo-wrapper"></div>
-                            </div>
-                            <div class="img-single-amigo">
-                                <div class="img-single-amigo-wrapper"></div>
-                            </div>
-                            <div class="img-single-amigo">
-                                <div class="img-single-amigo-wrapper"></div>
-                            </div>
-                            <div class="img-single-amigo">
-                                <div class="img-single-amigo-wrapper"></div>
-                            </div>
-                            <div class="img-single-amigo">
-                                <div class="img-single-amigo-wrapper"></div>
-                            </div>
-                            <div class="img-single-amigo">
-                                <div class="img-single-amigo-wrapper"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Perfil Info - end-->
-            
-            <!-- tbox -->
+            <!-- Inicio da caixa de postagem -->
             <section class="twee-box">
                 <div class="w60">
-                    <div class="wrapper-tbox" style="max-width: 1280px;">
+                    <div class="wrapper-tbox">
                         <div class="input-box">
                             <div class="twee-area">
                                 <span class="placeholder">O que está acontecendo?</span>
@@ -76,10 +35,10 @@
                     </div>
                 </div>
             </section>
-            <!-- tbox - end-->
+            <!-- Final da caixa de postagem -->
 
-            <!-- feed -->
-            <section class="feed">
+            <!-- inicio do feed -->
+            <sction class="feed">
                 <div class="pub-container" style="max-width: 1280px;">
                     <div class="w60">
                         <div class="pub-wrapper">
@@ -122,9 +81,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- feed - end -->
+            </sction>
+            
         </div>
-        <script src="/javascript/users.js"></script>
     </body>
 </html>

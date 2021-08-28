@@ -4,7 +4,7 @@
     <body>
         <nav>
             <div class="navbar">
-                <div class="logo"><a href="user.php">Rede Social</a></div>
+                <div class="logo"><a href="home.php">Rede Social</a></div>
                 <div class="nav-links">
                     <ul class="links">
                         <li><a href="#">Notificações</a><i class='bx bxs-chevron-down'></i></li>

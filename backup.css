@@ -214,7 +214,7 @@ input (field input/label)*/
 .w60{
   width: 67%; /* Afeta diretamente a tbox */
   float: left;
-  padding: 15px 10px 10px 10px; /* espaçamento das pubs*/
+  padding: 15px; /* espaçamento das pubs*/
   border: 4px solid -webkit-repeating-linear-gradient(-45deg, #77A1D3, #79CBCA, #C4E0E5);
 }
 h2.title{
@@ -303,54 +303,8 @@ h2.bio{
   .form .name-details .field:last-child{
     margin-left: 0px;
   }
-
-  .users header img{
-    height: 45px;
-    width: 45px;
-  }
-  .users header .logout{
-    padding: 6px 10px;
-    font-size: 16px;
-  }
-  :is(.users, .users-list) .content .details{
-    margin-left: 15px;
-  }
-
-  .users-list a{
-    padding-right: 10px;
-  }
-
-  .chat-area header{
-    padding: 15px 20px;
-  }
-  .chat-box{
-    min-height: 400px;
-    padding: 10px 15px 15px 20px;
-  }
-  .chat-box .chat p{
-    font-size: 15px;
-  }
-  .chat-box .outogoing .details{
-    max-width: 230px;
-  }
-  .chat-box .incoming .details{
-    max-width: 265px;
-  }
-  .incoming .details img{
-    height: 30px;
-    width: 30px;
-  }
-  .chat-area form{
-    padding: 20px;
-  }
-  .chat-area form input{
-    height: 40px;
-    width: calc(100% - 48px);
-  }
-  .chat-area form button{
-    width: 45px;
-  }
 }
+/* Final do CSS de Responsividade */
 
 /* caixa de publicação */
 .wrapper-tbox{
@@ -480,6 +434,10 @@ h2.bio{
   border-radius: 16px;
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.2),
               0 22px 34px -28px rgba(0,0,0,0.3);
+  /* etc */
+  margin: 10px 5px;
+  max-width: 100%; /* pub tamanho maximo */
+  border: 1px solid transparent;
 }
 
 h2.pub-name{
@@ -525,43 +483,34 @@ h3.cont-pub{
 .me-wrapper .feed .pub-container .w60{
   width: 100%; /* Afeta diretamente a tbox */
   float: left;
-  padding: 10px; /* espaçamento das pubs*/
+  padding: 15px; /* espaçamento das pubs*/
   border: 4px solid -webkit-repeating-linear-gradient(-45deg, #77A1D3, #79CBCA, #C4E0E5);
 }
 
+
 /* home feed */
 .content-center{
-  background: #fff;
+  max-height: 100%;
   max-width: 40%;
-  width: 100%;
-  max-height: 90%;
+  background: #fff;
+  padding: 5px 10px 5px 10px;
   border-radius: 16px;
   box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
               0 32px 64px -48px rgba(0,0,0,0.5);
-  /* Fixindo o wrapper na tela*/
+
+  /* Fixindo o me-wrapper na tela*/
   position:fixed;
   top: 100px;
   z-index: 100;
-  padding: 5px 5px 20px 5px;
 }
 .content-center .wrapper-tbox{
+  margin: 10px 5px;
   max-width: 100%;
   border: 1px solid transparent;
 }
 .content-center .feed{
   float:left;
   overflow-y: auto;
-  max-width: 100%; /* scroll tamanho maximo*/
-  max-height: 500px;
-}
-.content-center .w60{
-  width: 100%;
-  float: left;
-  padding-bottom: 10px;
-  border: 4px solid -webkit-repeating-linear-gradient(-45deg, #77A1D3, #79CBCA, #C4E0E5);
-}
-.content-center .pub-container{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  max-width: 1280px;
+  max-width: 66%; /* scroll tamanho maximo*/
+  max-height: 455px;
 }
